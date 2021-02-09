@@ -20,7 +20,22 @@ const displayFoods = meals => {
     }
 }
 const foodDetails = name =>{
-    const url = `${name}`
-    console.log(url)
-    
+    const itemIngradients = document.getElementById("itemsDetails");
+    const search = document.getElementById("search");
+    search.style.display ='none';
+    const foodDiv = document.getElementById("foodList");
+    foodDiv.style.display ='none';
+    const itemInfo = `
+        <img class="itemImg" src="${name}">
+        <h1 class="title">Ingradients</h1>
+        <div class="ingradients">
+        <h5>✅ 1 tbsp Olive Oil</h5>
+        <h5>✅ 1 onnion, finally chopped</h5>
+        <h5>✅ 2 garlic cloves, crushed</h5>
+        <h5>✅ 120g chorizp, diced</h5>
+        <h5>✅ 2x4g canes chopped tomatoes</h5>
+        <h5>✅ 1 tsp caster suger</h5>
+        </div>
+    `
+    itemIngradients.innerHTML = itemInfo;
 }
