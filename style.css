@@ -17,17 +17,19 @@ body{
 .foodDisplay{
     width: 250px;
     margin-left: 250px;
-    margin-top: 20px;
+    margin-top: 100px;
+    height: 350px;
     box-shadow: 10px 10px 20px gray;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 #foodList{
     display: grid;
-    grid-template-columns: repeat(3, 20em);
+    grid-template-columns: repeat(3, 19em);
+    grid-template-rows: repeat(3, 25em);
 }
 .fontBox{
     width: 250px;
-    height: 150px;
+    height: 100px;
     background-color: ghostwhite;
     padding: 20px;
     margin-bottom: 0px;
