@@ -18,8 +18,6 @@ const displayFoods = meals => {
         itemsDiv.innerHTML = foodInfo;
         items.appendChild(itemsDiv);
     };
-    let button = document.getElementById("button");
-    button.addEventListener("click", searchMatching(meals));
 }
 const foodDetails = name => {
     const itemIngradients = document.getElementById("itemsDetails");
@@ -40,12 +38,4 @@ const foodDetails = name => {
         </div>
     `
     itemIngradients.innerHTML = itemInfo;
-}
-function searchMatching(item) {
-    if (item === null) {
-        alert('error');
-    }
-    else{
-        displayFoods(item);
-    }
 }
