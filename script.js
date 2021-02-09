@@ -17,14 +17,16 @@ const displayFoods = meals => {
             `
         itemsDiv.innerHTML = foodInfo;
         items.appendChild(itemsDiv);
-    }
+    };
+    let button = document.getElementById("button");
+    button.addEventListener("click", searchMatching(meals));
 }
-const foodDetails = name =>{
+const foodDetails = name => {
     const itemIngradients = document.getElementById("itemsDetails");
     const search = document.getElementById("search");
-    search.style.display ='none';
+    search.style.display = 'none';
     const foodDiv = document.getElementById("foodList");
-    foodDiv.style.display ='none';
+    foodDiv.style.display = 'none';
     const itemInfo = `
         <img class="itemImg" src="${name}">
         <h1 class="title">Ingradients</h1>
@@ -38,4 +40,12 @@ const foodDetails = name =>{
         </div>
     `
     itemIngradients.innerHTML = itemInfo;
+}
+function searchMatching(item) {
+    if (item === null) {
+        alert('error');
+    }
+    else{
+        displayFoods(item);
+    }
 }
