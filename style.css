@@ -1,0 +1,36 @@
+body{
+    margin: 0%;
+    background-color: thistle;
+}
+.input-tab{
+    width: 400px;
+}
+.search-tab{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.img{
+    width: 250px;
+    border-radius: 10px;
+}
+.foodDisplay{
+    width: 250px;
+    margin-left: 250px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 20px gray;
+    margin-bottom: 40px;
+}
+#foodList{
+    display: grid;
+    grid-template-columns: repeat(3, 20em);
+}
+.fontBox{
+    width: 250px;
+    height: 150px;
+    background-color: ghostwhite;
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-radius: 10px;
+}
